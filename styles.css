@@ -3,6 +3,7 @@
 :root {
   --dark-color: #1b2133;
   --light-color: #e4ebf7;
+  --red-color: #f45b63;
 }
 
 img {
@@ -88,4 +89,70 @@ body {
 .profile__firstname,
 .profile__lastname {
   display: block;
+}
+
+.menu {
+  padding: 0;
+}
+.menu__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu__item {
+  margin: 0;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+.menu__item--active {
+  background-color:  #0c1224;
+  border-left: 5px solid var(--red-color);
+}
+.menu__link {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  text-decoration: none;
+  color: #fff;
+  height: 65px;
+}
+.menu__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.menu__text {
+  flex-grow: 1;
+}
+.menu__badge {
+  background-color: var(--red-color);
+  padding: 6px 14px;
+  border-radius: 100px;
+}
+.icon--home {
+  background-image: url('./img/home.png');
+}
+.icon--projects {
+  background-image: url('./img/projects.png');
+}
+.icon--messages {
+  background-image: url('./img/messages.png');
+}
+.icon--analytics {
+  background-image: url('./img/analytics.png');
+}
+.icon--tasks {
+  background-image: url('./img/tasks.png');
+}
+.icon--calendar {
+  background-image: url('./img/calendar.png');
+}
+.icon--layouts {
+  background-image: url('./img/layouts.png');
+}
+.icon--accounts {
+  background-image: url('./img/accounts.png');
 }
