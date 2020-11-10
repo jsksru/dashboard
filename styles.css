@@ -320,8 +320,17 @@ body {
 .widget--width-6 {
   grid-column: span 6;
 }
+.widget--width-5 {
+  grid-column: span 5;
+}
+.widget--width-4 {
+  grid-column: span 4;
+}
 .widget--width-3 {
   grid-column: span 3;
+}
+.widget--width-2 {
+  grid-column: span 2;
 }
 .widget__body {
   padding: 40px;
@@ -341,4 +350,99 @@ body {
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
+}
+.widget__body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.buttons-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.buttons-bar__group {
+  display: flex;
+  gap: 40px;
+}
+.buttons-bar__group--grow {
+  flex-grow: 1;
+}
+.button {
+  background-color: transparent;
+  border: 2px solid #a5a6bb;
+  border-radius: 28px;
+  color: #515974;
+  padding: 11px 28px 12px 28px;
+  outline: none;
+  cursor: pointer;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.button--dropdown::after {
+  content: '';
+  display: block;
+  margin-top: 2px;
+  width: 19px;
+  height: 9px;
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button--primary {
+  background-color: #54a6de;
+  color: #fff;
+  border: 2px solid #54a6de;
+}
+.button--danger::after,
+.button--primary::after {
+  background-image: url('./img/arrow_light.png');
+}
+.button--default::after {
+  background-image: url('./img/arrow_dark.png');
+}
+.button--danger {
+  background-color: #f45b63;
+  color: #fff;
+  border: 2px solid #f45b63;
+}
+
+.team {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.team__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.team__person-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+.team__person-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.team__person-name {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #515974;
+}
+.team__person-specialization {
+  font-size: 24px;
+  line-height: 38px;
+  color: #a5a6bb;
 }
