@@ -9,6 +9,7 @@
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -300,7 +301,7 @@ body {
 }
 
 .widget {
-  background-color: #fff;
+  background-color: #f2f6fc;
   border-radius: 5px;
 }
 .widget__title {
@@ -354,6 +355,7 @@ body {
 .widget__body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 }
 .buttons-bar {
@@ -364,6 +366,14 @@ body {
 .buttons-bar__group {
   display: flex;
   gap: 40px;
+}
+.buttons-bar__text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #515974;
+}
+.buttons-bar__text--red {
+  color: #f45b63;
 }
 .buttons-bar__group--grow {
   flex-grow: 1;
@@ -392,6 +402,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.button--add::after {
+  content: '';
+  display: block;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./img/plus.png');
+}
 .button--primary {
   background-color: #54a6de;
   color: #fff;
@@ -409,8 +430,14 @@ body {
   color: #fff;
   border: 2px solid #f45b63;
 }
+.button--succeed {
+  background-color: #57c059;
+  color: #fff;
+  border: 2px solid #57c059;
+}
 
 .team {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
